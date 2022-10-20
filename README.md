@@ -20,7 +20,6 @@ A fun dungeon crawl game played through your terminal
 
 
 ## Stretch Goals
-- [ ] Health points
 - [ ] Monsters - A hero can fight a monster and lose health
 - [ ] Armory - Choose your weapon - sword or axe
 - [ ] Choose a sidekick - small animals companion who increases health
