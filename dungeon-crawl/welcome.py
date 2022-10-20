@@ -1,6 +1,3 @@
-from tomlkit import string
-
-
 def info_welcome():
     print('Welcome to our version of the ultimate Dungeon Crawler.')
     print('\n')
@@ -10,8 +7,8 @@ def info_welcome():
     print('\n')
 
 def ask_name():
-    name = string(input('What is your name adventurer?'))
+    name = str(input('What is your name adventurer?'))
     print('\n')
-    print('{name}, that is a wonderful name!\n')
+    print(f'{name}, that is a wonderful name!\n')
     print('Let us begin!')
     return name
