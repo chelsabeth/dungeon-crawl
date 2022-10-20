@@ -40,7 +40,7 @@ def get_user_direction():
 # step 4 - compare users input and take them to location, if location is invalid, throw error
 
 # step 1 - display welcome message & describe game
-print(info_welcome())
+info_welcome()
 ask_name()
 
 # while True:
