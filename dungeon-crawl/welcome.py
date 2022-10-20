@@ -7,8 +7,8 @@ def info_welcome():
     print('\n')
 
 def ask_name():
-    name = str(input('What is your name adventurer?'))
+    name = str(input('What is your name brave adventurer?'))
     print('\n')
-    print(f'{name}, that is a wonderful name!\n')
-    print('Let us begin!')
+    print(f'{name}, that is a delightful name!\n')
+    print('Let us begin our spooky cave adventure!')
     return name
