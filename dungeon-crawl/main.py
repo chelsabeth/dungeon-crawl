@@ -1,6 +1,17 @@
 from welcome import *
+from player import *
+
+# Properties
+
+player_is_active = True
+player = player("No Name Given", 10) # This is generating a default player for now, update this later.
 
 # Helpers
+
+def move_player(direction):
+    return
+
+
 def get_user_direction():
     direction = input("Choose your direction adventurer: n, s, e, w\n")
     return direction
@@ -37,7 +48,10 @@ def exit_game():
 
 # Start of game
 info_welcome()
-ask_name()
+
+# Get name information
+name = ask_name()
+player.__set_name__(name)
 
 # Main game loop
 while player_is_active:
