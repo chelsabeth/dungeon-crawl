@@ -10,5 +10,5 @@ def ask_name():
     name = str(input('What is your name brave adventurer?'))
     print('\n')
     print(f'{name}, that is a delightful name!\n')
-    print('Let us begin our spooky cave adventure!')
+    print('Let us begin our spooky cave adventure!\n')
     return name

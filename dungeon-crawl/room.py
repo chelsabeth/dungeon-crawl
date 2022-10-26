@@ -37,6 +37,6 @@ class Room:
                 print(f'{monster.name}')
 
     def describe_room(self):
-        print(description)
+        print(self.description)
 
 

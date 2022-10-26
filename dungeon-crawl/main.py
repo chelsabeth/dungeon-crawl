@@ -67,6 +67,9 @@ info_welcome()
 name = ask_name()
 player.__set_name__(name)
 
+# Explain first room
+location.describe_room()
+
 # Main game loop
 while player_is_active:
 
