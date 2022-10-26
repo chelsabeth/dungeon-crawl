@@ -1,9 +1,5 @@
 from welcome import *
 
-# Properties
-
-player_is_active = True
-
 # Helpers
 def get_user_direction():
     direction = input("Choose your direction adventurer: n, s, e, w\n")
@@ -33,7 +29,6 @@ def parse_input(entry):
     # Still need to add inventory system pickup / drop commands, restart, and instructions page
 
 def exit_game():
-    player_is_active = False
     exit()
 
 # step 3 - if user quits game, show message
