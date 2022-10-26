@@ -55,10 +55,6 @@ def parse_input(entry):
 def exit_game():
     exit()
 
-# step 3 - if user quits game, show message
-
-# step 4 - compare users input and take them to location, if location is invalid, throw error
-
 # Start of game
 info_welcome()
 
