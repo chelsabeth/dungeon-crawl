@@ -12,6 +12,7 @@ location = rooms['entrance']
 # Helpers
 
 def move_player(direction):
+    global location
     if direction == 'n' and location.n_to != None:
         location = location.n_to
     elif direction == 's' and location.s_to != None:
@@ -49,7 +50,7 @@ def parse_input(entry):
         exit_game()
     else:
         print('This was not a valid command, please try again')
-        return 'invalid'
+        return
 
     # Still need to add inventory system pickup / drop commands, restart, and instructions page
 
@@ -73,5 +74,13 @@ location.describe_room()
 # Main game loop
 while player_is_active:
 
-    # Ask for a direction, parse it and perform that action
-    parse_input(get_user_direction())
+    # Ask for a direction
+    direction_input = get_user_direction()
+
+    direction = parse_input(direction_input)
+
+    if direction != None:
+        move_player(direction)
+
+
+
