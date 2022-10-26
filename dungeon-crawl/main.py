@@ -35,16 +35,12 @@ def get_user_direction():
 def parse_input(entry):
     internal_entry = entry.lower()
     if internal_entry == 'n' or internal_entry == 'north':
-        print('North Works')
-        return 'n' # What should I be returning here? This functions purpose it to parse a input and give back a useful result. Should it be calling a move function or something along those lines?
+        return 'n'
     elif internal_entry == 's' or internal_entry == 'south':
-        print('South Works')
         return 's'
     elif internal_entry == 'e' or internal_entry == 'east':
-        print('East Works')
         return 'e'
     elif internal_entry == 'w' or internal_entry == 'west':
-        print('West Works')
         return 'w'
     elif internal_entry == 'e' or internal_entry == 'exit' or internal_entry == 'leave' or internal_entry == 'quit':
         exit_game()
