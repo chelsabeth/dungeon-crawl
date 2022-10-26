@@ -1,5 +1,5 @@
 class Room:
-    def __init__(self, name, description, items = None, monsters = None, light, n_to = None, s_to = None, e_to = None, w_to = None):
+    def __init__(self, name, description, light = 'default', items = None, monsters = None, n_to = None, s_to = None, e_to = None, w_to = None):
         self.name = name
         self.description = description
         self.n_to = n_to
@@ -35,4 +35,8 @@ class Room:
             print('This room contains these monsters:')
             for monster in self.monsters:
                 print(f'{monster.name}')
+
+    def describe_room(self):
+        print(description)
+
 

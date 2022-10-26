@@ -10,7 +10,7 @@ rooms = {
     'cavern': Room("Cavern", 
     "South of you, you can see the dim light from the cave entrance. Mysterious passages run north and east. It's a bit...too quiet."),
 
-    'sleepquaters': Room("Sleeping Quarters", 
+    'sleepquarters': Room("Sleeping Quarters", 
     "You push hard to open the squeaky door. Inside you find a dusty bed and a few empty chests. Looks like you've reached a dead end. You just hope that door didn't alert anyone or anything."),
 
     'kitchen': Room("Kitchen", 

@@ -1,15 +1,29 @@
 from welcome import *
 from player import *
+from room import *
+from rooms_store import *
 
 # Properties
 
 player_is_active = True
 player = player("No Name Given", 10) # This is generating a default player for now, update this later.
+location = Room['entrance']
 
 # Helpers
 
 def move_player(direction):
-    return
+    if direction == 'n' and location.n_to != None:
+        location = location.n_to
+    elif direction == 's' and location.s_to != None:
+        location = location.s_to
+    elif direction == 'e' and location.e_to != None:
+        location = location.e_to
+    elif direction == 'w' and location.w_to != None:
+        location = location.w_to
+    else:
+        print("That was not a valid location")
+        return
+    location.describe_room()
 
 
 def get_user_direction():
