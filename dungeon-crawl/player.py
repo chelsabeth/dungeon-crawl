@@ -1,4 +1,4 @@
-class player:
+class Player:
 
 	def __init__(self, name, max_health):
 
@@ -7,7 +7,7 @@ class player:
 
 
 		# Health Bar Related
-		health_bar = health_bar(max_health, max_health)
+		# health_bar = health_bar(max_health, max_health)
 
 
 		# inventory (Gold included in inventory)
@@ -28,6 +28,9 @@ class player:
 		"pants": None,
 		"shoes": None
 	}
+
+	def __set_name__(self, name):
+		self.name = name
 
 
 class health_bar:
