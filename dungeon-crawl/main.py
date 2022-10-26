@@ -13,6 +13,7 @@ location = rooms['entrance']
 
 def move_player(direction):
     global location
+    global player
     if direction == 'n' and location.n_to != None:
         location = location.n_to
     elif direction == 's' and location.s_to != None:
@@ -22,13 +23,14 @@ def move_player(direction):
     elif direction == 'w' and location.w_to != None:
         location = location.w_to
     else:
-        print("That was not a valid location")
+        print(f'You cannot go that way {player.name}')
         return
     location.describe_room()
 
 
 def get_user_direction():
-    direction = input("Choose your direction adventurer: n, s, e, w\n")
+    global player
+    direction = input(f'Choose your direction, {player.name}: n, s, e, w\n')
     return direction
 
 
