@@ -6,8 +6,8 @@ from rooms_store import *
 # Properties
 
 player_is_active = True
-player = player("No Name Given", 10) # This is generating a default player for now, update this later.
-location = Room['entrance']
+player = Player("No Name Given", 10) # This is generating a default player for now, update this later.
+location = rooms['entrance']
 
 # Helpers
 
