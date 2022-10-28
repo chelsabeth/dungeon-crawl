@@ -46,6 +46,8 @@ def parse_input(entry):
         return 'w'
     elif internal_entry == 'e' or internal_entry == 'exit' or internal_entry == 'leave' or internal_entry == 'quit':
         exit_game()
+    elif internal_entry == 'r' or internal_entry == 'restart':
+        restart_game()
     else:
         print('This was not a valid command, please try again')
         return
@@ -55,15 +57,26 @@ def parse_input(entry):
 def exit_game():
     exit()
 
-# Start of game
-info_welcome()
+def restart_game():
 
-# Get name information
-name = ask_name()
-player.__set_name__(name)
+    # To Restart, Location has to be reset
+    location = rooms['entrance']    
+    print("\nThe Game Has restarted\n")
+    location.describe_room()
 
-# Explain first room
-location.describe_room()
+def start_game():
+
+    # Start of game
+    info_welcome()
+
+    # Get name information
+    name = ask_name()
+    player.__set_name__(name)
+
+    # Explain first room
+    location.describe_room()
+
+start_game()
 
 # Main game loop
 while player_is_active:
