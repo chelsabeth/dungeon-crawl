@@ -26,6 +26,7 @@ def move_player(direction):
         print(f'You cannot go that way {player.name}')
         return
     location.describe_room()
+    location.monsters_in_room()
 
 
 def get_user_direction():
