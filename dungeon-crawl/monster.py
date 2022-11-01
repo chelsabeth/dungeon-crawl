@@ -1,6 +1,7 @@
 class Monster:
-    def __init__(self, name, attack, health, loot = None, inventory = None, size):
+    def __init__(self, name, description, attack, health, size, loot = None, inventory = None):
         self.name = name
+        self.description = description
         self.attack = attack
         self.health = health
         self.size = size
