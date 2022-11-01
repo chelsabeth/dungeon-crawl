@@ -1,4 +1,5 @@
 from room import Room
+from monster_store import monsters
 # Where rooms will be stored
 # Room connections will be created here
 
@@ -17,7 +18,7 @@ rooms = {
     "You can smell something sweet in the air. You approach and see a stocked kitchen with warm muffins. You're favorite, pumpkin muffins! You shove a muffin in your mouth before whoever made them comes back, then notice a glowing door to the north, you feel it's pull again."),
 
     'treasure': Room("Treasure Chamber", 
-    "You have found the treasure chamber, although there is no treasure...at least not anymore. Sadly, the place has already been looted. At least you got a delicous muffin out of this adventure...")
+    "You have found the treasure chamber, although there is no treasure...at least not anymore. Sadly, the place has already been looted. At least you got a delicous muffin out of this adventure...", 'default', None, [monsters['undead']])
 }
 
 # Link rooms 
